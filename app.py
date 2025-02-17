@@ -4,7 +4,7 @@ import google.generativeai as ai
 # Configure API Key
 ai.configure(api_key="my api key")
 
-# Enhanced System Prompt
+#System Prompt
 sys_prompt = """
 You are an expert AI Python code reviewer. 
 Your role is to help students and developers by analyzing Python code, identifying errors, and providing solutions.
@@ -24,7 +24,7 @@ Your responses should always maintain a helpful, professional, and constructive 
 gemini_model = ai.GenerativeModel(model_name="models/gemini-1.5-pro", system_instruction=sys_prompt)
 
 # Streamlit UI
-st.title("🔍 AI Python Code Reviewer")
+st.title("AI Python Code Reviewer")
 
 user_input = st.text_area(label="Enter your Python Code", placeholder="Paste your code here...")
 
